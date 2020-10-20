@@ -1,0 +1,278 @@
+<!--doctype html-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<link rel="stylesheet" type="text/css" href="CSS_Portfolio.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Saurav Gaur-Portfolio</title>
+	<!--style----->
+	<style>
+		body{
+			background-color:#161616;
+		}
+		
+	</style>
+</head>
+<body>
+	<section id="main">
+	<nav>
+	<div class="toggle"></div>
+	<ul class="menu">
+	<li class="active"><a href="#main" >Home</a></li>	
+	<li><a href="#hobbies">Hobbies</a></li>
+	<li><a href="#ss">MUN Journey</a></li>		
+	<li><a href="#goals">Future Goals</a></li>	
+	<li><a href="#social">Contact</a></li>	
+	</ul>
+	</nav>
+	<br><br><br><br>
+	<br>
+	<div class="bgborder">
+	<div class="mypic">
+		<div class="bgshadow">
+		<img src="mypic1.jpg"></div>
+	</div>
+	<div class="name">
+	<section id="bg">
+	<form>
+	<br><br>
+	<div id="rcorners1">
+	<!--hello------->
+	<p>Hello</p>
+	<!--name--->
+	<h1>I'm <font color="#7F3400">Saurav Gaur</font></h1>
+	<!--details--------------->
+	 <h3> 19, Male</h3>
+	 
+ <!--details--------------->
+ <p class="details">I am from Delhi. I'm a 2nd year student at S.G.T.B. Khalsa, University of Delhi. I am pursuing B.Sc.(H) Computer Science. I have keen interest in learning and developing new skills. </p>
+	<br><br>
+	<a href="Saurav Gaur CV.pdf" class="cv-btn"><b>Download CV</b></a>
+	</div>	
+</form>
+</section>
+</div>
+</section>	
+</div>
+
+	<section id="hobbies">
+ <!--heading----------->
+ <h1 class="p-headind">Hobbies and Passion</h1>
+ <!--portfolio-container------------>
+ <div class="p-container">
+ <!--portfolio-box-1-------->
+ <div class="p-box">
+ <!--text---------------------->
+ <div class="overlay-text">
+ <h1>Painting</h1>
+ <p>Nature and Portrait</p> 
+ </div>
+ <!--bg-img------------->
+ <img src="Painting.jpg">
+  
+ </div>
+ <!--portfolio-box-2-------->
+ <div class="p-box">
+  <!--text--------->
+ <div class="overlay-text">
+ <h1>Debate</h1>
+ <p>Discussions and MUNs</p> 
+ </div>
+ <!--bg-img------------->
+ <img src="Debate.jpg">
+ </div>
+ <!--portfolio-box-3-------->
+ <div class="p-box">
+ <!--text--------->
+ <div class="overlay-text">
+ <h1>Programming</h1>
+ <p>Languages, HTML,CSS</p> 
+ </div>
+ <!--bg-img------------->
+ <img src="CP.png">
+ </div>
+ <!--portfolio-box-4-------->
+ <div class="p-box">
+ <!--text--------->
+ <div class="overlay-text">
+ <h1>Chess</h1>
+ <p></p> 
+ </div>
+ <!--bg-img-------------> 
+ <img src="Chess.jpg">
+ </div>
+ <!--portfolio-box-5-------->
+ <div class="p-box">
+ <!--text--------->
+ <div class="overlay-text">
+ <h1>Cycling</h1>
+ </div>
+ <!--bg-img-------------> 
+ <img src="Cycling.jpg">
+ </div>
+ <!--portfolio-box-6-------->
+ <div class="p-box">
+ <!--text--------->
+ <div class="overlay-text">
+ <h1>Books</h1>
+ <p>Novel, Non-Fiction</p> 
+ </div>
+ <!--bg-img-------------> 
+ <img src="Books.jpg">
+ </div>
+</div>
+ 
+ </section>
+ <section id="ss">
+	
+ <center><h1 class="p-headind" style="width: 20%">MUN Journey</h1></center>
+ 
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="FirstPic.jpg" style="width:100%" >
+  <div class="text">I started participating in Debates and other competitions since Class 9th. I was introduced to MUNs by one of my school teacher and ever since I have found myself as a more informed and responsible person.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Prez.jpg" style="width:100%"  >
+  <div class="text">Having been a part of my School MUN society, I was given ample opportunities to participate in various conferences and won various awards for the school. The society truly gave me a chance to convert my fervor into feat </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Society.jpg" style="width:100%" >
+  <div class="text">I have continued this journey in my college as well under the renowned society across DU - Confero MUN Society, where I have understood so many new perspectives around various issues. The society has also honoured me with the position of Joint Secretary this year</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</script>
+</section>
+
+ <!--services-------------------->
+	<section id="goals">
+	<!--heading-------------->
+	
+	<div class="s-heading">
+	<center><h1 class="p-headind" style="width: 100%">Future Goals</h1></center><br>
+	<p ><font color="white">Here are some future goals that I have made</font></p>
+	</div>
+	<!--services-box-container--------->
+	<div class="b-container">
+	<!--box-1---------------->
+	<div class="s-box">
+	<!--img------------->
+	<div class="s-b-img">
+		<!--type----------->
+		<div class="s-type">IT Projects</div>
+		<!--name------->
+		<img src="ITProject.jpg">
+	</div>
+	<!--text----------------->
+	<div class="s-b-text">
+	<a >Aiming to work on IT projects based on Web Development frameworks. Also want to work on the incorporation of IT in domestic industries </a>
+	</div>
+	</div>
+		<!--box-2---------------->
+	<div class="s-box">
+	<!--img------------->
+	<div class="s-b-img">
+	<!--type----------->
+		<div class="s-type">Finance</div>
+		<!--name------->
+		<img src="Finance.jpg"> 
+	</div>
+	<!--text----------------->
+	<div class="s-b-text">
+	<a>I have decided to pursue M.B.A. for my Post Graduation and constantly working on building my Management skills and Financial Aptitude</a>
+	</div>
+	</div>
+		<!--box-3---------------->
+	<div class="s-box">
+	<!--img------------->
+	<div class="s-b-img">
+		<!--type----------->
+		<div class="s-type"><center>Responsibility</center></div>
+		<!--name------->
+		<img src="Service.jpg">
+	</div>
+	<!--text----------------->
+	<div class="s-b-text">
+	<a>I find it my duty to contribute to the society by spreading awareness about various issues. I plan to contribute to an NGO and help in social work</a>
+	</div>
+	</div>
+	</div>
+	
+ 	<footer>
+
+	<center><h1 class="p-headind" style="width: 20%">Contact</h1></center>
+			<section id="social">
+				<div class="soc">
+				<a  target="_blank"><i="" class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;5-H,Pocket A2,Mayur Vihar Phase III, Delhi, 110096</a><br>
+				<br><a  target="_blank"><i class="fa fa-phone-alt"></i>&nbsp;&nbsp;+91 95825 36914</a><br>
+				<br><a href="mailto:saurav.gaur2001@gmail.com"><i="" class="fa fa-envelope" ></i>&nbsp;&nbsp;saurav.gaur2001@gmail.com</a><br>
+				<br><a href="https://www.facebook.com/saurav.gaur.524" ><i class="fab fa-facebook"></i>&nbsp;&nbsp;Saurav Gaur</a><br>
+				<br><a href="https://www.instagram.com/sauravgaur10/"><i class="fab fa-instagram"></i>&nbsp;&nbsp;sauravgaur10</a><br>
+				<br><a href="https://www.linkedin.com/in/saurav-gaur-3b73821b8/"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;Saurav Gaur</a><br>
+				<br>
+				</div>
+				<br><hr width="80%">
+				
+				<p align="center">©Copyright. All Rights Reserved<br>Designed by Saurav Gaur<br>&nbsp;</p>
+			
+			</section>
+		</footer>
+ 
+</body>
+ <script type="text/javascript" src="JQuery.js"></script>
+	<script type="text/javascript">
+	
+		  /*Responsive Navigation*/
+	  $(document).ready(function(){
+	 $('.toggle').click(function(){
+		 $('.toggle').toggleClass('active')
+		 
+		 $('nav ul').toggleClass('active-menu')
+		
+		 
+	 })
+ });
+	
+	</script>
+
+  
+</html>
